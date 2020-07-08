@@ -1,0 +1,103 @@
+@import "colors.scss";
+@import "style.scss";
+
+body {
+  background-color: $color_background;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+  background-color: $color_carousel;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid:
+    "header header header header header header"
+    "menu   menu   menu   menu   menu   menu"
+    "main   main   main   main   main   main"
+    "footer footer footer footer footer footer";
+  grid-gap: 5px;
+  //background-color: #2196F3;
+  padding: 2px;
+}
+
+.grid-container > div {
+  //background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  //padding: 20px 0;
+  font-size: 30px;
+}
+
+.buttons {
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+}
+
+.buttonAdm {
+    width: 23%;
+    height: 15%;
+    box-shadow: -10px 0 10px #3e697a;
+    height: inherit;
+    position: relative;
+    background-color: $color_button;
+    
+  }
+
+.nav {
+  margin-top: 10px;
+  background-color: $color_carousel;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: $color_footer;
+  color: #fff;
+  height: 45px;
+  width: 100%;
+  margin-top: 10px;
+
+  .logo {
+    position: relative;
+    width: 30%;
+    float: left;
+    height: 45px;
+
+    -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .content {
+    position: relative;
+    width: 40%;
+    float: left;
+    height: 45px;
+  }
+
+  .client {
+    position: relative;
+    width: 30%;
+    float: left;
+    height: 45px;
+
+    -webkit-box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+embed {
+  max-width: 100%;
+}
+
+body {
+  background-color: #0a3353;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+  background-color: #052743;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid: "header header header header header header" "menu   menu   menu   menu   menu   menu" "main   main   main   main   main   main" "footer footer footer footer footer footer";
+  grid-gap: 5px;
+  padding: 2px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.buttons {
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+}
+
+.buttonAdm {
+  width: 23%;
+  height: 15%;
+  box-shadow: -10px 0 10px #3e697a;
+  height: inherit;
+  position: relative;
+  background-color: #67879c;
+}
+
+.nav {
+  margin-top: 10px;
+  background-color: #052743;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #183f5c;
+  color: #fff;
+  height: 45px;
+  width: 100%;
+  margin-top: 10px;
+}
+.footer .logo {
+  position: relative;
+  width: 30%;
+  float: left;
+  height: 45px;
+  -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.footer .content {
+  position: relative;
+  width: 40%;
+  float: left;
+  height: 45px;
+}
+.footer .client {
+  position: relative;
+  width: 30%;
+  float: left;
+  height: 45px;
+  -webkit-box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=abertura.css.map */

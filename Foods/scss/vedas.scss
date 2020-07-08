@@ -1,0 +1,22 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: pedidos; }
+.item3 { grid-area: menu; }
+.item4 { grid-area: nav; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'header pedidos menu nav'
+  'header pedidos menu nav'
+  'header pedidos menu nav';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
